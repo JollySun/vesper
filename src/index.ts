@@ -100,12 +100,15 @@ export function vesper(schema: any, options?: object) {
         const container = Container.of(req);
         container.set(CurrentRequest, req);
         container.set(CurrentResponse, res);
-        allOptions.context.container = container;
-        allOptions.context.dataLoaders = {};
+
+        const queryOptions = {
+          ...allOptions,
+          context: { container, dataLoaders: {} }
+        };
 
         return runHttpQuery([req, res], {
             method: req.method,
-            options: allOptions,
+            options: queryOptions,
             query: req.method === "POST" ? req.body : req.query,
         }).then((gqlResponse) => {
 
