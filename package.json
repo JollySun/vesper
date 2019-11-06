@@ -1,6 +1,6 @@
 {
   "name": "vesper",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "GraphQL Server Side Framework for TypeScript and JavaScript.",
   "license": "MIT",
   "readmeFilename": "README.md",
@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vesper-framework/vesper.git"
+    "url": "https://github.com/congmingpai/vesper.git"
   },
   "bugs": {
-    "url": "https://github.com/vesper-framework/vesper/issues"
+    "url": "https://github.com/congmingpai/vesper/issues"
   },
   "main": "index.js",
   "tags": [
