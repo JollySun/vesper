@@ -1,5 +1,5 @@
 {
-  "name": "vesper",
+  "name": "@congmingpai/vesper",
   "version": "0.1.10",
   "description": "GraphQL Server Side Framework for TypeScript and JavaScript.",
   "license": "MIT",
@@ -10,7 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/congmingpai/vesper.git"
+    "url": "git@github.com:congmingpai/vesper.git"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
   },
   "bugs": {
     "url": "https://github.com/congmingpai/vesper/issues"
